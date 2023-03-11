@@ -38,6 +38,7 @@ h2 {
     padding-left: 30px;
     font-size: 40px;
     color: #292929;
+    background: none;
 }
 
 header {
@@ -45,6 +46,9 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 810px;
+    background: url(images/header_bac.png) no-repeat;
+    background-size: contain;
+    background-position: right top;
 }
 
 .header-container {
@@ -100,15 +104,17 @@ header {
 }
 
 .payment {
-    background: url(images/payment.png) no-repeat;
+    background: url(images/peyment_bac.png) no-repeat;
     background-size: 100%;
-    height: 800px;
-    padding-top: 230px;
+    height: 900px;
+    padding-top: 280px;
+    margin-top: -90px;
 }
 
 .payment h1 {
     text-align: center;
     line-height: 1;
+    background: none;
 }
 
 .payment .payment-desc {
@@ -124,16 +130,23 @@ header {
 }
 
 .container_2 {
-    height: 800px;
+    height: 850px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    background: url(images/container2_bac.png) no-repeat;
+    background-size: 100%;
+    padding: 30px;
+    opacity: 0.7;
 }
 
 .container_2 h1 {
     line-height: 1;
     font-size: 90px;
+    background: none;
+    color: #FFF;
+    text-shadow: #000000 0 0 10px;
 }
 
 .container_2 h1 img {
@@ -519,6 +532,12 @@ footer {
     .footer-text {
         padding-top: 20px;
     }
+    .payment h1 {
+        font-size: 100px;
+    }
+    .payment .payment-desc {
+        font-size: 80px;
+    }
 }
 
 /*1280px*/
@@ -572,6 +591,9 @@ footer {
     .payment .payment-desc {
         font-size: 70px;
     }
+    .container_2 {
+        height: 660px;
+    }
     .container_2 h1 {
         font-size: 70px;
     }
@@ -591,6 +613,9 @@ footer {
     .savings-block-1 h1 {
         font-size: 50px;
     }
+    footer {
+        height: 560px;
+    }
     .footer-text {
         font-size: 40px;
     }
@@ -599,111 +624,208 @@ footer {
     }
 }
 /*450px*/
-@media(max-width: 450px) {
+@media(max-width: 400px) {
     .header-img {
         margin-left: -91px;
     }
+    header {
+        height: 300px;
+        background-size: 60%;
+    }
+    .header-container {
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+    .header-container img {
+        width: 210px;
+    }
     .container-title {
-        font-size: 40px;
+        font-size: 22px;
+        width: 280px;
     }
     .container {
-        height: 600px;
+        height: 380px;
+        margin-bottom: 30px;
+        background-size: 45%;
     }
     .container-link {
-        width: 110%;
+        width: 100%;
+    }
+    .container-link img {
+        width: 25px;
+        height: 25px;
+    }
+    .container-link a {
+        font-size: 10px;
+    }
+    .link-inst {
+        padding: 5px 35px 5px 20px !important;
+    }
+    .cli {
+        margin-top: 0;
     }
     .payment {
-        padding-top: 60px;
+        padding-top: 80px;
+        height: 250px;
+    }
+    .payment img {
+        width: 50px;
     }
     h1 {
-        font-size: 60px;
+        font-size: 25px;
     }
     .payment .payment-desc {
-        font-size: 50px;
+        font-size: 21px;
+    }
+    .payment h1 {
+        font-size: 22px;
     }
     .payment p {
-        margin-top: 50px;
-        font-size: 20px;
-        text-align: center;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: right;
+        padding-right: 10px;
+    }
+    .container_2 {
+        height: 270px;
     }
     .container_2 h1 {
-        font-size: 60px;
-        text-align: center;
+        font-size: 22px;
+        text-align: left;
+        padding-left: 0;
+    }
+    .container_2 img {
+        width: 50px;
+    }
+    .container_2 h1 img {
+        width: 20px;
     }
     html {
-        width: 610px;
+        width: auto;
     }
     h2 {
-        font-size: 30px;
+        font-size: 10px;
+        padding-left: 0;
+    }
+    .style-content {
+        padding-top: 30px;
+    }
+    .style-container-left img {
+        width: 50px;
+        margin-bottom: -40px;
     }
     .style-container-right p {
-        font-size: 27px;
+        font-size: 10px;
+        line-height: 4;
     }
     .style-container-center {
         width: 50%;
         margin: 0 20px;
     }
+    .container_3_1 {
+        justify-content: flex-start;
+        margin-top: -30px;
+    }
+    .container_3_1_desc_1 {
+        margin-left: 30px;
+    }
+    .container_3 p {
+        font-size: 10px;
+        margin-top: -10px;
+    }
     .container_3_1_desc_2 {
-        margin-left: 80px;
+        margin-left: 60px;
+    }
+    .container_3_1_desc_3 {
+        margin-left: 90px;
     }
     .container_3_2 {
-        width: 230px;
+        width: 190px;
     }
     .container_3 {
-        background-size: 40%;
+        background-size: 50%;
+        margin-top: 50px;
+        background-position: left bottom;
+        height: 170px;
     }
     .container_4 {
-        height: 600px;
+        height: 330px;
+        padding: 0 45px;
+    }
+    .container_4 h1 {
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: 170px;
     }
     .container_4-images {
         width: 50%;
     }
     .container_4-img1 {
         margin-top: 0px;
-        width: 570px;
+        width: 320px;
+        margin-left: -30px;
+    }
+    .container_4-img2 {
+        width: 50px;
+        margin-left: -30px;
+        margin-top: 30px;
+    }
+    .project {
+        padding-right: 0;
+        padding-top: 0;
     }
     .project-img {
         height: 230px;
+        background-size: cover;
+    }
+    .project-content {
+        margin-top: 0px;
+        padding-right: 30px;
+    }
+    .gallery_2_2-img-3 {
+        height: 100px;
     }
     .gallery_3 {
         display: none;
     }
     .savings-block-1 h1 {
-        font-size: 30px;
+        font-size: 15px;
+        margin-bottom: 170px;
+        margin-top: 0;
+        padding-top: 50px;
     }
     .savings-img {
-        width: 220px;
+        width: 140px;
     }
     .savings-block-2 {
         padding: 0;
         padding-left: 30px;
     }
     .savings-title {
-        font-size: 24px;
+        font-size: 10px;
     }
     .savings-desc {
-        font-size: 17px;
-    }
-    .savings-block-1 h1 {
-        margin-bottom: 200px;
+        font-size: 6px;
     }
     .savings-block-1 img {
         width: 30%;
     }
     footer {
         padding-top: 20px;
-        height: 340px;
+        height: 210px;
+        padding-left: 30px;
     }
     .footer-h1 {
-        font-size: 50px;
+        font-size: 24px;
     }
     .footer-text {
-        font-size: 30px;
+        font-size: 14px;
     }
     .footer-text_2 {
-        font-size: 20px;
+        font-size: 10px;
     }
     .footer-btn {
-        font-size: 16px;
+        font-size: 13px;
+        padding: 5px 10px;
     }
 }
