@@ -624,7 +624,7 @@ footer {
     }
 }
 /*450px*/
-@media(max-width: 400px) {
+@media(max-width: 415px) {
     .header-img {
         margin-left: -91px;
     }
