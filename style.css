@@ -624,7 +624,7 @@ footer {
     }
 }
 /*450px*/
-@media(max-width: 415px) {
+@media(max-width: 430px) {
     .header-img {
         margin-left: -91px;
     }
@@ -666,10 +666,11 @@ footer {
     }
     .payment {
         padding-top: 80px;
-        height: 250px;
+        height: 260px;
     }
     .payment img {
         width: 50px;
+        margin-top: 20px;
     }
     h1 {
         font-size: 25px;
@@ -724,7 +725,7 @@ footer {
     }
     .container_3_1 {
         justify-content: flex-start;
-        margin-top: -30px;
+        margin-top: -40px;
     }
     .container_3_1_desc_1 {
         margin-left: 30px;
@@ -812,7 +813,7 @@ footer {
     }
     footer {
         padding-top: 20px;
-        height: 210px;
+        height: 230px;
         padding-left: 30px;
     }
     .footer-h1 {
@@ -820,6 +821,7 @@ footer {
     }
     .footer-text {
         font-size: 14px;
+        padding-top: 50px;
     }
     .footer-text_2 {
         font-size: 10px;
